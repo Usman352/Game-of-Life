@@ -44,7 +44,7 @@ class Grid:
 
 
     def display_grid(self):
-        print("====================")
+        print("=" * self.cols * 4)
         for x in range(self.rows):
             for y in range(self.cols):
                 cell = self.cells[x][y]
@@ -53,4 +53,4 @@ class Grid:
                 else:
                     print('.', end='')
                 print(" | ", end='')
-            print("\n====================")
+            print("\n", "=" * self.cols * 4)
