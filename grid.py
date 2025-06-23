@@ -43,3 +43,14 @@ class Grid:
                 self.cells[x][y].alive = next_states[x][y]
 
 
+    def display_grid(self):
+        print("====================")
+        for x in range(self.rows):
+            for y in range(self.cols):
+                cell = self.cells[x][y]
+                if cell.alive:
+                    print('#', end='')
+                else:
+                    print('.', end='')
+                print(" | ", end='')
+            print("\n====================")
