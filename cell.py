@@ -3,5 +3,5 @@ class Cell:
         self.alive = alive
     def set_alive(self):
         self.alive = True
-    def toggle(self):
-        self.alive = not self.alive
+    def set_dead(self):
+        self.alive = False
