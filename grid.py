@@ -1,11 +1,12 @@
 from cell import Cell
 
 class Grid:
-    def __init__(self, rows, cols):
+    def __init__(self, rows, cols, cell_size):
         self.rows = rows
         self.cols = cols
         self.cells = [[Cell(False) for x in range(cols)]
                       for y in range(rows)]
+        self.cell_size = cell_size
     def get_neighbors(self, r, c):
         neighbors = []
         diff = [(-1, -1), (0, -1), (1, -1),
